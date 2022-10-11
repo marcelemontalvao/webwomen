@@ -1,0 +1,60 @@
+header {
+    background-image: url("/assets/img/Group-119.png");
+    background-size: cover;
+    width: 100%;
+    max-width: 100%;
+}
+
+header .top {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 100px 16px;
+}
+header .container h1 {
+    color: var(--color-grey-6);
+}
+header .container span {
+    color: var(--color-grey-3);
+    font-weight: var(--weight-1);
+    font-size: 32px;
+}
+header .container p {
+    color: var(--color-grey-5);
+    font-size: 18px;
+    font-weight: var(--weight-3);
+}
+
+header .container button {
+    font-weight: var(--weight-1);
+    font-size: 16px;
+    background-color: var(--color-brand-1);
+    border: 2px solid var(--color-brand-1);
+    color: var(--color-grey-6);
+    border-radius: var(--radius-2);
+    padding: 12px 50px 12px 50px;
+    transition: 300ms ease-out;
+}
+
+header .container .p-bold {
+    color: var(--color-grey-5);
+    font-size: 18px;
+    font-weight: var(--weight-1);
+}
+
+header .container .text {
+    display: flex;
+    flex-direction: column;
+    line-height: 32px;
+}
+
+@media(min-width: 935px) {
+   header {
+        background-image: url("/assets/img/backgroung.png");  
+    }
+
+    header .container .text {
+        gap: 15px;
+    }
+}

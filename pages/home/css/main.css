@@ -1,0 +1,118 @@
+main h2{
+    margin: 43px 0 44px 0;
+    color: var(--color-grey-1);
+    font-weight: var(--weight-1);
+    font-size: 22px;
+}
+
+main .cards {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+main .card {
+    background-color: var(--color-grey-6);
+    list-style-type: none;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 28px;
+    border-radius: var(--radius-2);
+}
+
+main .card > span {
+    color: var(--color-grey-1);
+    font-weight: var(--weight-1);
+    font-size: 22px;
+    line-height: 33px;
+}
+
+main .info-card > span  {
+    margin-right: 32px;
+}
+
+main .info-card span {
+    font-size: 14px;
+    line-height: 22px;
+    color: var(--color-grey-2);
+}
+
+main .card p {
+    color: var(--color-grey-2);
+    font-size: 16px;
+    line-height: 32px;
+}
+
+.btns-modality {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.btns-card  {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 32px;
+}
+
+
+.btns-card .grey-button {
+    height: 30px;
+    background-color: var(--color-grey-3);
+    color: var(--color-grey-2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 12px;
+    gap: 10px;
+    border: none;
+    border-radius: var(--radius-2);
+    font-weight: var(--weight-2);
+}
+
+.btns-card .purple-button {
+    background: var(--color-brand-1);
+    border: 2px solid var(--color-brand-1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 28px;
+    gap: 10px;
+    border: none;
+    border-radius: var(--radius-2);
+    color: var(--color-grey-6);
+    font-weight: var(--weight-1);
+    font-size: 16px;
+    cursor: pointer;
+}
+
+@media(min-width: 975px) {
+    .container-cards {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    main .cards {
+        width: 60%;
+        margin-right: 78px;
+        margin-bottom: 78px;
+    }
+
+    .btns-card {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .btns-card .grey-button {
+    }
+
+    .btns-card .purple-button {
+        height: 38px;
+    }
+
+}
