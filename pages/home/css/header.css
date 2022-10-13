@@ -51,10 +51,19 @@ header .container .text {
 
 @media(min-width: 935px) {
    header {
-        background-image: url("/assets/img/backgroung.png");  
+        background-image: url("/assets/img/backgroung.png");   
+        height: 100vh;
     }
 
     header .container .text {
         gap: 15px;
+    }
+
+    header .top { 
+        height: 100%;
+        gap: 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 }

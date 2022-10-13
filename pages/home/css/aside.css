@@ -2,11 +2,12 @@ aside {
     margin-top: 36px;
     margin-bottom: 43px;
     background-color: var(--color-grey-6);
-    padding: 32px 0 0 0;
+    padding: 20px 0 0 0;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 28px;
+    position: sticky;
+    top: 20px;
     border-radius: var(--radius-2);
 }
 
@@ -15,24 +16,29 @@ aside > span {
     font-weight: var(--weight-1);
     font-size: 22px;
     line-height: 33px;
-    padding: 0px 0px 0px 28px;
+    padding: 10px 0 0 20px;
 }
 
 aside .none-selected {
     color: var(--color-grey-2);
     font-size: 16px;
     line-height: 32px;
-    padding: 0px 0px 0px 28px;
+    padding: 20px;
+}
 
+aside .none-selected img { 
+   margin-top: 32px; 
 }
 
 aside .cards-selected {
     width: 100%;
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
 } 
 
 aside .card-selected {
-   padding: 32px 28px 32px 28px;
+    padding: 20px;
     list-style-type:none;
     border-bottom: 2px solid var(--color-grey-5);
 }
@@ -41,8 +47,6 @@ aside .card-selected:hover {
     background-color: var(--color-grey-5);
 }
 
-aside .info-card {
-}
 
 aside .title-card-selected {
     display: flex;
@@ -58,8 +62,15 @@ aside .title-card-selected p {
 }
 
 aside .title-card-selected i { 
+    padding: 15px;
+    margin-left: 5px;
     color: var(--color-grey-2);
-    background-color: var(--color-grey-5);
+    background-color: var(--color-grey-4);
+    border-radius: var(--radius-2);
+    cursor: pointer;
+}
+aside .title-card-selected i:hover { 
+    background-color: var(--color-grey-3);
     border-radius: var(--radius-2);
     cursor: pointer;
 }
@@ -68,6 +79,10 @@ aside .title-card-selected i {
     aside {
         width: 35%;
         margin-top: 0;
+    }
+
+    aside .card-selected {
+        padding: 32px 20px 32px 20px;
     }
 
 }

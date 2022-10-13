@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./pages/home/css/header.css">
     <link rel="stylesheet" href="./pages/home/css/main.css">
     <link rel="stylesheet" href="./pages/home/css/aside.css">
-    <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
     <title>Webwomen</title>
     <meta
       name="description"
@@ -20,7 +20,7 @@
 <body> 
   <header>
     <div class="top container">
-       <h1>Webwomen</h1>
+      <h1>Webwomen</h1>
       <span>Lugar de mulher é onde ela quiser!</span>
       <div class="text">
         <p>
@@ -29,11 +29,11 @@
         <p>Ou até mesmo oportunidades para atender eventos de tecnologia no Brasil e ao redor do mundo? </p>
       </div> 
         <p class="p-bold">Confere aqui embaixo o que temos pra você!</p>
-      <button>Ir para seção das vagas</button>
+      <a href="#job-vacancies"><button>Ir para seção das vagas</button></a>
     </div>
    
   </header>
-    <main class="container">
+    <main id="job-vacancies" class="container">
       <h2>Vagas</h2>
       <div class="container-cards">
         <ul class="cards">
@@ -41,11 +41,14 @@
         </ul> 
         <aside>
           <span>Vagas selecionadas</span>
-          <p class="none-selected">Você ainda não aplicou para nenhuma vaga</p>
+          <div class="none-selected">
+            <p>Você ainda não aplicou para nenhuma vaga</p>
+            <img src="./assets/img/no-items.svg" alt="No items">
+           </div>
+
           <ul class="cards-selected">
 
           </ul>
-         
         </aside>
       </div>
     </main>

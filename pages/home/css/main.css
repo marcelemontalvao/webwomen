@@ -1,5 +1,5 @@
 main h2{
-    margin: 43px 0 44px 0;
+    padding: 43px 0 44px 0;
     color: var(--color-grey-1);
     font-weight: var(--weight-1);
     font-size: 22px;
@@ -14,26 +14,29 @@ main .cards {
 main .card {
     background-color: var(--color-grey-6);
     list-style-type: none;
-    padding: 30px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 28px;
     border-radius: var(--radius-2);
+
 }
 
 main .card > span {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
     color: var(--color-grey-1);
     font-weight: var(--weight-1);
-    font-size: 22px;
+    font-size: 1.2rem;
     line-height: 33px;
 }
 
-main .info-card > span  {
-    margin-right: 32px;
-}
-
-main .info-card span {
+main .info-card {
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px; 
     font-size: 14px;
     line-height: 22px;
     color: var(--color-grey-2);
@@ -47,8 +50,8 @@ main .card p {
 
 .btns-modality {
     display: flex;
-    justify-content: space-between;
-    gap: 10px;
+    justify-content: flex-start;
+    gap: 5px;
 }
 
 .btns-card  {
@@ -103,12 +106,16 @@ main .card p {
         margin-bottom: 78px;
     }
 
+    main .card { 
+        padding: 30px;
+    }
+    main .card > span { 
+        font-size: 22px;
+    }
+
     .btns-card {
         flex-direction: row;
         justify-content: space-between;
-    }
-
-    .btns-card .grey-button {
     }
 
     .btns-card .purple-button {

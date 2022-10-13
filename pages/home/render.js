@@ -20,7 +20,6 @@ function renderAsideCards(array) {
         removeApply();
     } else { 
         message.style.display = "block";
-        message.innerText = "Você ainda não aplicou para nenhuma vaga";
     }
 }
 
